@@ -5,6 +5,8 @@
 \usepackage{tikz}
 \usepackage{booktabs}
 \usepackage{graphicx}
+\usepackage{float}
+\usepackage{placeins}
 
 \title{HW \#4}
 \author{Theo Tarr}
@@ -27,12 +29,13 @@ P = |\psi_1 + \psi_2|^2 = (0.35 + 0.22)^2 = (0.57)^2 = \boxed{0.3249}
 
 \textbf{(c)} The wave probability (0.32) is almost double the probability if there was no interference (0.17). This increased electron density between the two positive nuclei creates a covalent bond that holds them together. Because of the constructive interference, there is a higher probability of finding the electron between the two nuclei, which lowers the overall energy of the system and forms a stable bond.
 
-\begin{figure}
+\begin{figure}[H]
 \centering
 \includegraphics[width=0.5\linewidth]{0CA4DC78-8301-44DB-974D-70536716A0A0_1_201_a.jpeg}
-\caption{Constructive interference increases electron density between two nuclei}
-\label{fig:placeholder}
+\caption{Constructive interference increases electron density between two nuclei.}
+\label{fig:q1-bonding}
 \end{figure}
+\FloatBarrier
 
 
 \section*{2. Hydrogen Atom}
@@ -81,37 +84,41 @@ T = \frac{1.890 \text{ eV}}{8.617 \times 10^{-5} \text{ eV/K}} = \boxed{21{,}900
 \section*{3. Chemical Reactions}
 
 \textbf{(a)} The diagram shows potential energy versus position with wave functions for each state (A, B, and transition).
-\begin{figure}
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.5\linewidth]{807F8F1B-1CA5-4785-B7BD-C9D1F89A6F56_1_201_a.jpeg}
-    \caption{Wave functions for a double-well: state A, state B, and transition state.}
-    \label{fig:placeholder}
+    \caption{Double-well potential with localized states A and B and a higher-energy transition state near the barrier.}
+    \label{fig:q3-doublewell}
 \end{figure}
+\FloatBarrier
 
-Each well has standing-wave states where $n=1$ is the lowest energy states in each well. More nodes will have higher energy (in a box, $E_n=\frac{n^2 h^2}{8mL^2}$), so $n=1$ will have the lowest energy. Thus, there must be a standing wave for state A and another for state B. To go from A $\to$ B, the molecule must pass through a transition-state standing wave that is at even higher energy.
-
-\textbf{(b)}
+Each well has quantized standing-wave states. The $n=1$ mode is the ground state (lowest energy) and has no internal node; higher-$n$ states have more nodes and higher energy. This is analogous to a particle in a box,
 \[
-\text{rate}=\nu e^{-E_b/(k_BT)},\quad \text{time}=\frac{1}{\text{rate}},\quad
-\nu\approx10^{13}\,\text{s}^{-1},\quad k_BT=(8.617\times10^{-5})(310)=0.02671\,\text{eV}
+E_n = \frac{n^2 h^2}{8mL^2}.
+\]
+So state A and state B are shown as localized low-energy standing waves in their respective wells. To convert A $\to$ B, the system must pass through the high-energy configuration near the barrier top (the transition state).
+
+\textbf{(b)} The rate model used here is the Arrhenius/transition-state form:
+\[
+\text{rate}=\nu e^{-E_b/(k_B T)},\qquad \text{time}=\frac{1}{\text{rate}}.
+\]
+It comes from: (i) Boltzmann factor $e^{-E_b/(k_B T)}$ for the probability to have enough thermal energy to cross the barrier, and (ii) attempt frequency $\nu$ (molecular vibration scale, here $\nu\approx10^{13}\,\text{s}^{-1}$).
+
+At $T=310\,\text{K}$,
+\[
+k_B T=(8.617\times10^{-5}\,\text{eV/K})(310\,\text{K})=0.02671\,\text{eV}.
 \]
 
-\[
-E_b=0.1\,\text{eV}:\quad
-\text{rate}=10^{13}e^{-0.1/0.02671}=2.4\times10^{11}\,\text{s}^{-1},\quad
-\text{time}=4\times10^{-12}\,\text{s}
-\]
-
-\[
-E_b=1\,\text{eV}:\quad
-\text{rate}=10^{13}e^{-1/0.02671}=5.3\times10^{-4}\,\text{s}^{-1},\quad
-\text{time}=1.9\times10^3\,\text{s}\approx32\,\text{min}
-\]
-
-\[
-E_b=10\,\text{eV}:\quad
-\text{rate}=10^{13}e^{-10/0.02671}\approx10^{-150}\,\text{s}^{-1},\quad
-\text{time}\approx10^{150}\,\text{s}
-\]
+\begin{align*}
+E_b&=0.1\,\text{eV}: &
+\text{rate}&=10^{13}e^{-0.1/0.02671}=2.4\times10^{11}\,\text{s}^{-1}, &
+\text{time}&=\frac{1}{\text{rate}}\approx4\times10^{-12}\,\text{s}.\\[4pt]
+E_b&=1\,\text{eV}: &
+\text{rate}&=10^{13}e^{-1/0.02671}=5.3\times10^{-4}\,\text{s}^{-1}, &
+\text{time}&=\frac{1}{\text{rate}}\approx1.9\times10^{3}\,\text{s}\approx32\,\text{min}.\\[4pt]
+E_b&=10\,\text{eV}: &
+\text{rate}&=10^{13}e^{-10/0.02671}\approx10^{-150}\,\text{s}^{-1}, &
+\text{time}&\approx10^{150}\,\text{s}.
+\end{align*}
 
 \end{document}
