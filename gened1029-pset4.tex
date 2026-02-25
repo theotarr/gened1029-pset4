@@ -26,18 +26,13 @@ P = |\psi_1 + \psi_2|^2 = (0.35 + 0.22)^2 = (0.57)^2 = \boxed{0.3249}
 
 \textbf{(c)} The wave probability (0.32) is almost double the probability if there was no interference (0.17). This increased electron density between the two positive nuclei creates a covalent bond that holds them together.
 
-\begin{center}
-\begin{tikzpicture}
-  % Bonding diagram
-  \node at (0,0) {$+$};
-  \node at (3,0) {$+$};
-  % Electron cloud between nuclei
-  \draw[thick, fill=blue!15] (1.5,0) ellipse (1.8cm and 0.7cm);
-  \node at (0,0) {$+$};
-  \node at (3,0) {$+$};
-  \node at (1.5, -1.2) {Bonding: enhanced $e^-$ density between nuclei};
-\end{tikzpicture}
-\end{center}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.5\linewidth]{0CA4DC78-8301-44DB-974D-70536716A0A0_1_201_a.jpeg}
+\caption{Come up with a caption for this}
+\label{fig:placeholder}
+\end{figure}
 
 Because of the constructive interference, there is a higher probability of finding the electron between the two nuclei, which lowers the overall energy of the system and forms a stable bond.
 
@@ -86,31 +81,16 @@ T = \frac{1.890 \text{ eV}}{8.617 \times 10^{-5} \text{ eV/K}} = \boxed{21{,}900
 
 \section*{3. Chemical Reactions}
 
-\textbf{(a)} The three standing waves on the double-well potential:
+\textbf{(a)} The diagram has potential $V(x)$ versus position $x$ with wave functions for each state (A, B, and transition)
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.62\linewidth]{7EABA6E6-A0A7-4908-B303-BBF827A02782_1_201_a.jpeg}
+    \caption{Wave functions for a double-well: state A, state B, and transition state.}
+    \label{fig:q3-waves}
+\end{figure}
 
-\begin{center}
-\begin{tikzpicture}[scale=0.9]
-  % Double well potential
-  \draw[thick] (0,3) -- (0,0) -- (2,0) -- (3,2.5) -- (4,0) -- (6,0) -- (6,3);
-  \node at (1, -0.5) {State A};
-  \node at (5, -0.5) {State B};
-  \node at (3, 3) {Barrier};
+The molecule must pass through a transition state because A and B are separated by an activation barrier. To go from A $\to$ B, the molecule must cross the barrier maximum (the transition state), which is the highest-energy and least-stable point on that path.
 
-  % State A wave (localized in left well)
-  \draw[blue, thick, domain=0.2:1.8, samples=50] plot (\x, {0.8*sin(deg(3.14*(\x-0.2)/1.6)) + 0.5});
-  \node[blue] at (1, 1.8) {\small State A};
-
-  % State B wave (localized in right well)
-  \draw[red, thick, domain=4.2:5.8, samples=50] plot (\x, {0.8*sin(deg(3.14*(\x-4.2)/1.6)) + 0.5});
-  \node[red] at (5, 1.8) {\small State B};
-
-  % Transition state (spread across both wells)
-  \draw[green!60!black, thick, dashed, domain=0.2:5.8, samples=80] plot (\x, {0.5*sin(deg(3.14*(\x-0.2)/5.6)) + 2.2});
-  \node[green!60!black] at (3, 3.5) {\small Transition state};
-\end{tikzpicture}
-\end{center}
-
-The molecule must pass through the transition state because to convert from A to B, the wave must reorganize from being localized in well A to being localized in well B. This requires enough energy to exist at the top of the barrier, where the wavefunction is spread across both wells. The transition state represents the unstable intermediate configuration during bond rearrangement.
 
 \textbf{(b)} The rate of crossing a barrier is given by:
 \[
