@@ -98,27 +98,27 @@ E_n = \frac{n^2 h^2}{8mL^2}.
 \]
 So state A and state B are shown as localized low-energy standing waves in their respective wells. To convert A $\to$ B, the system must pass through the high-energy configuration near the barrier top (the transition state).
 
-\textbf{(b)} The rate model used here is the Arrhenius/transition-state form:
+\textbf{(b)}
 \[
-\text{rate}=\nu e^{-E_b/(k_B T)},\qquad \text{time}=\frac{1}{\text{rate}}.
+\text{rate}=\frac{k_B T}{h}e^{-E_b/(k_B T)},\qquad \text{time}=\frac{1}{\text{rate}}.
 \]
-It comes from: (i) Boltzmann factor $e^{-E_b/(k_B T)}$ for the probability to have enough thermal energy to cross the barrier, and (ii) attempt frequency $\nu$ (molecular vibration scale, here $\nu\approx10^{13}\,\text{s}^{-1}$).
-
 At $T=310\,\text{K}$,
 \[
-k_B T=(8.617\times10^{-5}\,\text{eV/K})(310\,\text{K})=0.02671\,\text{eV}.
+k_B T=(8.617\times10^{-5}\,\text{eV/K})(310\,\text{K})=0.02671\,\text{eV},
+\qquad
+\frac{k_B T}{h}=6.46\times10^{12}\,\text{s}^{-1}.
 \]
 
 \begin{align*}
 E_b&=0.1\,\text{eV}: &
-\text{rate}&=10^{13}e^{-0.1/0.02671}=2.4\times10^{11}\,\text{s}^{-1}, &
-\text{time}&=\frac{1}{\text{rate}}\approx4\times10^{-12}\,\text{s}.\\[4pt]
+\text{rate}&=(6.46\times10^{12})e^{-0.1/0.02671}=1.53\times10^{11}\,\text{s}^{-1}, &
+\text{time}&=\frac{1}{\text{rate}}\approx6.5\times10^{-12}\,\text{s}.\\[4pt]
 E_b&=1\,\text{eV}: &
-\text{rate}&=10^{13}e^{-1/0.02671}=5.3\times10^{-4}\,\text{s}^{-1}, &
-\text{time}&=\frac{1}{\text{rate}}\approx1.9\times10^{3}\,\text{s}\approx32\,\text{min}.\\[4pt]
+\text{rate}&=(6.46\times10^{12})e^{-1/0.02671}=3.42\times10^{-4}\,\text{s}^{-1}, &
+\text{time}&=\frac{1}{\text{rate}}\approx2.9\times10^{3}\,\text{s}\approx48\,\text{min}.\\[4pt]
 E_b&=10\,\text{eV}: &
-\text{rate}&=10^{13}e^{-10/0.02671}\approx10^{-150}\,\text{s}^{-1}, &
-\text{time}&\approx10^{150}\,\text{s}.
+\text{rate}&=(6.46\times10^{12})e^{-10/0.02671}\approx3\times10^{-150}\,\text{s}^{-1}, &
+\text{time}&\approx3\times10^{149}\,\text{s}.
 \end{align*}
 
 \end{document}
