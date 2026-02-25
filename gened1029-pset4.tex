@@ -4,6 +4,7 @@
 \usepackage{enumitem}
 \usepackage{tikz}
 \usepackage{booktabs}
+\usepackage{graphicx}
 
 \title{HW \#4}
 \author{Theo Tarr}
@@ -30,7 +31,7 @@ P = |\psi_1 + \psi_2|^2 = (0.35 + 0.22)^2 = (0.57)^2 = \boxed{0.3249}
 \begin{figure}
 \centering
 \includegraphics[width=0.5\linewidth]{0CA4DC78-8301-44DB-974D-70536716A0A0_1_201_a.jpeg}
-\caption{Come up with a caption for this}
+\caption{Constructive interference increases electron density between the two nuclei (bonding state).}
 \label{fig:placeholder}
 \end{figure}
 
@@ -89,44 +90,30 @@ T = \frac{1.890 \text{ eV}}{8.617 \times 10^{-5} \text{ eV/K}} = \boxed{21{,}900
     \label{fig:q3-waves}
 \end{figure}
 
-The molecule must pass through a transition state because A and B are separated by an activation barrier. To go from A $\to$ B, the molecule must cross the barrier maximum (the transition state), which is the highest-energy and least-stable point on that path.
+Each well supports quantized standing-wave states. The $n=1$ mode is the ground state (lowest energy) in each well; higher $n$ have more nodes and higher energy (as in a box, $E_n=\frac{n^2 h^2}{8mL^2}$). So we draw a localized standing wave for state A and another for state B. To convert A $\to$ B, the system must pass through a delocalized transition-state wave near the barrier top.
 
-
-\textbf{(b)} The rate of crossing a barrier is given by:
+\textbf{(b)}
 \[
-\text{rate} = \nu \, e^{-E_{\text{barrier}} / k_B T}
-\]
-where $\nu \approx 10^{13}$ s$^{-1}$ is the molecular vibration frequency. At body temperature ($T = 310$ K):
-\[
-k_B T = (8.617 \times 10^{-5})(310) = 0.02671 \text{ eV}
+\text{rate}=\nu e^{-E_b/(k_BT)},\quad \text{time}=\frac{1}{\text{rate}},\quad
+\nu\approx10^{13}\,\text{s}^{-1},\quad k_BT=(8.617\times10^{-5})(310)=0.02671\,\text{eV}
 \]
 
-\bigskip
-
-\textbf{Barrier = 100 meV = 0.1 eV:}
 \[
-\text{rate} = 10^{13} \times e^{-0.1/0.02671} = 10^{13} \times e^{-3.74} = 10^{13} \times 0.024 = 2.4 \times 10^{11} \text{ s}^{-1}
-\]
-\[
-\text{time} = \frac{1}{\text{rate}} \approx \boxed{4 \times 10^{-12} \text{ s (picoseconds)}}
+E_b=0.1\,\text{eV}:\quad
+\text{rate}=10^{13}e^{-0.1/0.02671}=2.4\times10^{11}\,\text{s}^{-1},\quad
+\text{time}=4\times10^{-12}\,\text{s}
 \]
 
-\textbf{Barrier = 1 eV:}
 \[
-\text{rate} = 10^{13} \times e^{-1/0.02671} = 10^{13} \times e^{-37.4} = 10^{13} \times 5.3 \times 10^{-17} = 5.3 \times 10^{-4} \text{ s}^{-1}
-\]
-\[
-\text{time} = \frac{1}{\text{rate}} \approx \boxed{1{,}900 \text{ s} \approx 32 \text{ minutes}}
+E_b=1\,\text{eV}:\quad
+\text{rate}=10^{13}e^{-1/0.02671}=5.3\times10^{-4}\,\text{s}^{-1},\quad
+\text{time}=1.9\times10^3\,\text{s}\approx32\,\text{min}
 \]
 
-\textbf{Barrier = 10 eV:}
 \[
-\text{rate} = 10^{13} \times e^{-10/0.02671} = 10^{13} \times e^{-374} \approx 10^{13} \times 10^{-163} = 10^{-150} \text{ s}^{-1}
+E_b=10\,\text{eV}:\quad
+\text{rate}=10^{13}e^{-10/0.02671}\approx10^{-150}\,\text{s}^{-1},\quad
+\text{time}\approx10^{150}\,\text{s}
 \]
-\[
-\text{time} = \frac{1}{\text{rate}} \approx \boxed{10^{150} \text{ s (far longer than the age of the universe)}}
-\]
-
-Small barriers allow reactions to occur almost instantaneously at body temperature. Medium barriers take minutes---enzymes can lower these to speed up biological reactions. Large barriers make spontaneous reactions essentially impossible, which is why covalent bonds (like those in DNA) are stable at physiological temperatures.
 
 \end{document}
